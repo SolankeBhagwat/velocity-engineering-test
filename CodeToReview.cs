@@ -48,7 +48,7 @@ namespace Utility.Valocity.ProfileHelper  //namespace could be more structured l
                         name = "Betty";
                     }
                     // Adds new people to the list
-                    _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0)))); //make the  timespan seperate veriable and explain it what it does
+                    _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0)))); //make the  timespan seperate veriable and explain it what it does. can we check if the given user is already present then dont add or think of use of othere data structure like dictionary instead of list
                 }
                 catch (Exception e)//use specific exception instead of generic
                 {
